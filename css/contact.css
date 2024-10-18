@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+/* Modern Normalize */
+*,::after,::before{box-sizing:border-box}:root{-moz-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{padding:0}progress{vertical-align:baseline}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+
+a { text-decoration: none;
+color:black;}
+a:active {text-decoration: none;}
+a:visited {color: black;}
+a:hover{color: whitesmoke;}
+
+/* 뒷 배경 글자 움직임 */
+.scl { 
+    z-index: -1;
+    font-size:1000px;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    color:rgb(10, 180, 115);
+    opacity: 50%;
+}
+
+/* header start */
+.mtr-1 {
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+    padding-left: 1rem ;
+    padding-right: 2rem;
+	text-align: left;
+    display: flex;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.a1 {
+    width: 100%;
+}
+.a2 {
+    width: 100%;
+}
+.a3 {
+    width: 100%;
+}
+
+/* header end */
+
+/* main content3.img - start */
+
+.d {
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    -khtml-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    box-shadow: 5px 5px 5px 5px gray;
+}  
+
+  #container {
+    width: 500px;
+    margin: auto;
+  }
+  
+  /*Neon*/
+  p {
+    text-align: center;
+    font-size: 7em;
+    margin: 20px 0 20px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  p:nth-child(1) a {
+    color: #fff;
+    font-family: Monoton;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+  p:nth-child(1) a:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+
+  p a:hover {
+    color: #ffffff;
+/* css 고장인데 느낌이 좋아서 살렸습니다. */
+
+/* main content3.img - end */
+
+
+/* 배경 그라디언트 */
+.moving-grad {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, #00daef, #bc67ff);
+      background-size: 200% 200%;
+      animation: MoveGrad 5s ease infinite;
+    align-items: center;
+    justify-content: center;
+    
+    &__txt {
+      font-size: 50px;
+      font-family: Arial;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+  
+  @keyframes MoveGrad {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+
+/*  */
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 15px;
+  }
